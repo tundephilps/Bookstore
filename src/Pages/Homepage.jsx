@@ -9,10 +9,12 @@ import Midnight from "../components/Midnight";
 import Testimonials from "../components/Testimonials";
 import Comfort from "../components/Comfort";
 import Subscribe from "../components/Subscribe";
+import Follow from "../components/Follow";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="overflow-x-clip">
       <NavbarMobile />
       <Navbar />
       <Hero />
@@ -24,6 +26,8 @@ const Homepage = () => {
       <Testimonials />
       <Comfort />
       <Subscribe />
+      <Follow />
+      <Footer />
     </div>
   );
 };

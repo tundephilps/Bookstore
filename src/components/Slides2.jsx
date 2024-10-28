@@ -20,30 +20,30 @@ import Book7 from "../assets/images/book7.jpg";
 
 const BookCoverSwiper2 = () => {
   return (
-    <div className="lg:block">
+    <div className="">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Scrollbar]}
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={1}
         pagination={{
           clickable: true,
         }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // }}
         className="mySwiper"
         breakpoints={{
           640: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 1,
           },
           768: {
             slidesPerView: 2,
             spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 2,
+            slidesPerView: 2.3,
             spaceBetween: 30,
           },
         }}
@@ -51,31 +51,46 @@ const BookCoverSwiper2 = () => {
         <SwiperSlide>
           <div className="">
             <p className="pb-4 font-bold">01</p>
-            <div className="bg-white lg:p-12 p-2 h-[450px]">
-              <img src={Book5} className="h-full w-full shadow-2xl" />
+            <div className="bg-white lg:p-12 p-2 h-[400px] lg:w-[300px] w-screen">
+              <img
+                src={Book5}
+                className="h-full w-full shadow-2xl shadow-black"
+              />
             </div>
 
-            <p className="text-black font-extrabold pt-3">The humans</p>
+            <p className="text-black font-extrabold pt-3 font-ibarra text-[24px]">
+              The humans
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="">
             <p className="pb-4 font-bold">02</p>
-            <div className="bg-white lg:p-12 p-2 h-[450px]">
-              <img src={Book6} className="h-full w-full shadow-2xl" />
+            <div className="bg-white lg:p-12 p-2 h-[400px] lg:w-[300px] w-screen ">
+              <img
+                src={Book6}
+                className="h-full w-full shadow-2xl shadow-black"
+              />
             </div>
 
-            <p className="text-black font-extrabold pt-3">The radleys</p>
+            <p className="text-black font-extrabold pt-3  font-ibarra text-[24px]">
+              The radleys
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className=" ">
             <p className="pb-4 font-bold">03</p>
-            <div className="bg-white lg:p-12 p-2 h-[450px]">
-              <img src={Book7} className="h-full w-full shadow-2xl" />
+            <div className="bg-white lg:p-12 p-2 h-[400px] lg:w-[300px]  w-screen ">
+              <img
+                src={Book7}
+                className="h-full w-full shadow-2xl shadow-black"
+              />
             </div>
 
-            <p className="text-black font-extrabold pt-3">The possesed</p>
+            <p className="text-black font-extrabold pt-3 font-ibarra text-[24px]">
+              The possesed
+            </p>
           </div>
         </SwiperSlide>
       </Swiper>

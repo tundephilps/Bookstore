@@ -4,7 +4,7 @@ import hand from "../assets/images/hand.png";
 const Midnight = () => {
   return (
     <div>
-      <div className="w-full lg:full grid lg:grid-cols-2 grid-cols-1 bg-[#ffffff]">
+      <div className="w-full lg:full grid lg:grid-cols-2 grid-cols-1 bg-[#ffffff] text-gray-800">
         <div className="h-full">
           <img src={hand} className="w-full h-full object-cover" />
         </div>
@@ -14,7 +14,7 @@ const Midnight = () => {
             <span className="italic font-thin">the no.1 sunday times </span>{" "}
             bestseller
           </p>
-          <p className="w-[65%] font-bold pt-4">
+          <p className="w-[65%] font-bold pt-4 ">
             Nore's Life Has Been Going From Bad To Worse. Then At The Stroke Of
             Midnight On Her Last Day On Earth She Finds Herself Transported To A
             Library.
